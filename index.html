@@ -12,12 +12,16 @@
 
 <body>
     
-   <h1>Dmitriy 1986</h1>
-
-   <h2>Hello world</h2>
+    <h1 id="title">Hello world <span id="close">x</span></h1>
+    
     
 <script>
-
+    const title = document.getElementById('title');
+    const close = document.getElementById('close');
+    
+    close.addEventListener('click', () => {
+        title.hidden = true;
+    });
 
 </script>
 
